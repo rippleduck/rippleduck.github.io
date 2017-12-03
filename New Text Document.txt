@@ -1,0 +1,4 @@
+https://api.coinone.co.kr/orderbook/?currency=xrp&format=json&method=request.get
+
+
+http://doc.coinone.co.kr/#api-Public-Orderbook
