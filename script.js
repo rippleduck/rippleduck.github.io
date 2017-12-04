@@ -78,7 +78,7 @@ function bithumbdash(e)
 	result2 = "<div>" + sellpricebithumb+ "</div>";
 		
 	});
-	$('#sellpricebithumb').html(result);
+	$('#sellpricebithumb').html(koreanresult);
 	$('#buypricebithumb').html(result2);
 	
 }
