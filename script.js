@@ -71,14 +71,14 @@ function bithumbdash(e)
 	{
 	rawbuypricebithumb=krw*value.buy_price;
 	var buypricebithumb = rawbuypricebithumb.toFixed(2);// makes huh to 6 decimal places
-	result = "<div>" + buypricebithumb+ "</div>";
+	result = "<div>" + buypricebithumb+ "</div>";     testresult="<div>" + value.buy_price + "</div>";
 	
 	rawsellpricebithumb=krw*value.sell_price;
 	var sellpricebithumb = rawsellpricebithumb.toFixed(2);// makes huh to 6 decimal places
 	result2 = "<div>" + sellpricebithumb+ "</div>";
 		
 	});
-	$('#sellpricebithumb').html(koreanresult);
+	$('#sellpricebithumb').html(testresult);
 	$('#buypricebithumb').html(result2);
 	
 }
