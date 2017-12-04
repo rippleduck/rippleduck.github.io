@@ -14,7 +14,7 @@ function getkorean()
 }
 
 
-setInterval( getkorean(),500);
+setInterval( getkorean(),22200);
 
  //********** this one gets the  price of XRP on the api EVERY 200 MILISECONDS
 setInterval( 
