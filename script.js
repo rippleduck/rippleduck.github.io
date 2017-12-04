@@ -4,9 +4,9 @@
  //**************** this one gets the  price of KOREAN PRICE on the api EVERY 200 MILISECONDS
 function getkorean()
 {
-	var URLKRW ='http://api.fixer.io/latest?base=USD';
+	var URLKRW ='http://api.fixer.io/latest?base=KRW';
 	$.ajax({
-		//cache: false,
+		cache: false,
 		dataType: "json",
 		url: URLKRW,
 		success: korean
@@ -14,7 +14,7 @@ function getkorean()
 }
 
 
-setInterval( getkorean(),22200);
+setInterval( getkorean(),300);
 
  //********** this one gets the  price of XRP on the api EVERY 200 MILISECONDS
 setInterval( 
@@ -69,16 +69,16 @@ function bithumbdash(e)
 	var result2="";
 	$.each(e,function(index, value)
 	{
-	rawbuypricebithumb=krw*value.buy_price;   valuebuyprice=value.buy_price;
+	rawbuypricebithumb=krw*value.buy_price;
 	var buypricebithumb = rawbuypricebithumb.toFixed(2);// makes huh to 6 decimal places
-	result = "<div>" + buypricebithumb+ "</div>";     testresult="<div>" + valuebuyprice + "</div>";
+	result = "<div>" + buypricebithumb+ "</div>";
 	
 	rawsellpricebithumb=krw*value.sell_price;
 	var sellpricebithumb = rawsellpricebithumb.toFixed(2);// makes huh to 6 decimal places
 	result2 = "<div>" + sellpricebithumb+ "</div>";
 		
 	});
-	$('#sellpricebithumb').html(testresult);
+	$('#sellpricebithumb').html(result);
 	$('#buypricebithumb').html(result2);
 	
 }
