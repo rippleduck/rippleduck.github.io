@@ -6,7 +6,7 @@ function getkorean()
 {
 	var URLKRW ='http://api.fixer.io/latest?base=KRW';
 	$.ajax({
-		cache: false,
+		//cache: false,
 		dataType: "json",
 		url: URLKRW,
 		success: korean
