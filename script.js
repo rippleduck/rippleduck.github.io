@@ -4,7 +4,7 @@
  //**************** this one gets the  price of KOREAN PRICE on the api EVERY 200 MILISECONDS
 function getkorean()
 {
-	var URLKRW ='http://api.fixer.io/latest?base=KRW';
+	var URLKRW ='http://api.fixer.io/latest?base=USD';
 	$.ajax({
 		//cache: false,
 		dataType: "json",
