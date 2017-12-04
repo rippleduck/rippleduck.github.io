@@ -69,9 +69,9 @@ function bithumbdash(e)
 	var result2="";
 	$.each(e,function(index, value)
 	{
-	rawbuypricebithumb=krw*value.buy_price;
+	rawbuypricebithumb=krw*value.buy_price;   valuebuyprice=value.buy_price;
 	var buypricebithumb = rawbuypricebithumb.toFixed(2);// makes huh to 6 decimal places
-	result = "<div>" + buypricebithumb+ "</div>";     testresult="<div>" + value.buy_price + "</div>";
+	result = "<div>" + buypricebithumb+ "</div>";     testresult="<div>" + valuebuyprice + "</div>";
 	
 	rawsellpricebithumb=krw*value.sell_price;
 	var sellpricebithumb = rawsellpricebithumb.toFixed(2);// makes huh to 6 decimal places
